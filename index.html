@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>사랑 유형 | FLTI</title>
+        <script>
+            function checkOnlyOne(element) {
+                const checkboxes
+                    = document.querySelector("." + element.name).querySelectorAll("input");
+                checkboxes.forEach((cb) => {
+                    cb.checked = false;
+                })
+                element.checked = true;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <div class="q1">
+                <p>
+                    주말 아침에 늦잠을 자고 일어났습니다. 당신은 어떤 음식으로
+                    아점을 먹으시겠습니까?
+                </p>
+
+                <input type="checkbox" id="s1" name="q1" value="36" onclick='checkOnlyOne(this)'>
+                    <label for="s1" >야채가 들어있는 샌드위치</label>
+                </input>
+            
+                <input type="checkbox" id="s2" name="q1" value="12" onclick='checkOnlyOne(this)'>
+                    <label for="s2">햄버거</label>
+                </input>
+                
+                <input type="checkbox" id="s3" name="q1" value="45" onclick='checkOnlyOne(this)'>
+                    <label for="s3">버터에 구운 햄 치즈 토스트</label>
+                </input>
+            </div>
+            <div class="q2">
+                <p>
+                    당신은 오늘 소개팅을 했습니다. 카페에 가니 상대방이 당신의 이상형이군요. 어떤 커피를 시키겠습니까?
+                </p>
+
+                <input type="checkbox" id="s4" name="q2" value="13" onclick='checkOnlyOne(this)'>
+                    <label for="s4" >아메리카노</label>
+                </input>
+            
+                <input type="checkbox" id="s5" name="q2" value="45" onclick='checkOnlyOne(this)'>
+                    <label for="s5">카페라떼</label>
+                </input>
+                
+                <input type="checkbox" id="s6" name="q2" value="26" onclick='checkOnlyOne(this)'>
+                    <label for="s6">캬라멜마끼야또</label>
+                </input>
+            </div>
+            <div class="q3">
+                <p>
+                    당신은 소개팅 상대가 마음에 들어 애프터 신청을 했습니다. 저녁으로 어떤 음식을 고르시겠습니까?
+                </p>
+
+                <input type="checkbox" id="s7" name="q3" value="35" onclick='checkOnlyOne(this)'>
+                    <label for="s7" >고급 레스토랑에서 스테이크 & 와인</label>
+                </input>
+            
+                <input type="checkbox" id="s8" name="q3" value="46" onclick='checkOnlyOne(this)'>
+                    <label for="s8">길거리 포차에서 삼겹살과 소주</label>
+                </input>
+                
+                <input type="checkbox" id="s9" name="q3" value="12" onclick='checkOnlyOne(this)'>
+                    <label for="s9">펍카페에서 치킨과 맥주</label>
+                </input>
+            </div>
+            <div class="q4">
+                <p>
+                    식사 후 소개팅 상대와 조각 케이크를 먹으려고 합니다. 어떤 디저트를 드시겠습니까?
+                </p>
+
+                <input type="checkbox" id="s10" name="q4" value="35" onclick='checkOnlyOne(this)'>
+                    <label for="s10" >치즈 케잌</label>
+                </input>
+            
+                <input type="checkbox" id="s11" name="q4" value="12" onclick='checkOnlyOne(this)'>
+                    <label for="s11">레인보우 케잌</label>
+                </input>
+                
+                <input type="checkbox" id="s12" name="q4" value="46" onclick='checkOnlyOne(this)'>
+                    <label for="s12">초코 케잌</label>
+                </input>
+            </div>
+            <div class="q5">
+                <p>
+                    친한 친구와 분식집에 왔습니다. 오늘 점심으로는 라면이 땡기네요. 어떤 라면을 드시겠습니까?
+                </p>
+
+                <input type="checkbox" id="s13" name="q5" value="13" onclick='checkOnlyOne(this)'>
+                    <label for="s13" >떡라면</label>
+                </input>
+            
+                <input type="checkbox" id="s14" name="q5" value="25" onclick='checkOnlyOne(this)'>
+                    <label for="s14">치즈라면</label>
+                </input>
+                
+                <input type="checkbox" id="s15" name="q5" value="46" onclick='checkOnlyOne(this)'>
+                    <label for="s15">만두라면</label>
+                </input>
+            </div>
+            <div class="q6">
+                <p>
+                    김밥 1개를 시켜서 나눠먹으려고 합니다. 어떤 김밥을 시키시겠습니까?
+                </p>
+
+                <input type="checkbox" id="s16" name="q6" value="36" onclick='checkOnlyOne(this)'>
+                    <label for="s16" >기본김밥</label>
+                </input>
+            
+                <input type="checkbox" id="s17" name="q6" value="15" onclick='checkOnlyOne(this)'>
+                    <label for="s17">참치김밥</label>
+                </input>
+                
+                <input type="checkbox" id="s18" name="q6" value="24" onclick='checkOnlyOne(this)'>
+                    <label for="s18">매운진미채김밥</label>
+                </input>
+            </div>
+            <div class="q7">
+                <p>
+                    매운 음식을 좋아하는 친구와 덮밥을 먹기로 했습니다. 어떤 덮밥을 먹을까요?
+                </p>
+
+                <input type="checkbox" id="s19" name="q7" value="35" onclick='checkOnlyOne(this)'>
+                    <label for="s19" >매콤제육덮밥</label>
+                </input>
+            
+                <input type="checkbox" id="s20" name="q7" value="16" onclick='checkOnlyOne(this)'>
+                    <label for="s20">오징어덮밥</label>
+                </input>
+                
+                <input type="checkbox" id="s21" name="q7" value="24" onclick='checkOnlyOne(this)'>
+                    <label for="s21">명란아보카도덮밥</label>
+                </input>
+            </div>
+            
+            <div class="q8">
+                <p>
+                    어제 친구들과 술을 마셨습니다. 아침 해장국으로 어떤 국밥을 먹을까요? 
+                </p>
+
+                <input type="checkbox" id="s22" name="q8" value="35" onclick='checkOnlyOne(this)'>
+                    <label for="s22" >콩나물국밥</label>
+                </input>
+            
+                <input type="checkbox" id="s23" name="q8" value="16" onclick='checkOnlyOne(this)'>
+                    <label for="s23">순대국밥</label>
+                </input>
+                
+                <input type="checkbox" id="s24" name="q8" value="24" onclick='checkOnlyOne(this)'>
+                    <label for="s24">소머리국밥</label>
+                </input>
+            </div>
+
+        </div>
+    </body>
+</html>
