@@ -8,7 +8,7 @@ function gup(name, url) {
 }
 
 function onSubmitClick() {
-    window.location.href = "/FLTI";
+    window.location.href = "/flti";
 }
 
 function onShareClick() {
