@@ -8,6 +8,8 @@
 *{
     font-family: TmoneyRoundWindExtraBold;
     box-sizing: border-box;
+    word-break: keep-all;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body{

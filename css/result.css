@@ -5,6 +5,43 @@
     font-style: normal;
 }
 
+div.submit{
+    display: flex;
+    justify-content: center;
+}
+
+.share{
+    margin-bottom: 5vh;
+}
+
+.shareBtn{
+    display: flex;
+    justify-content: center;
+}
+
+button.submit {
+    margin-top: 3vh;
+    position: relative;
+    display: inline;
+    width: 200px;
+    height: 48px;
+    border-radius: 35px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+button.submit:hover{
+    background-color: rgb(121, 121, 121);
+    border-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
 body{
     margin: 0 auto;
 }
@@ -12,6 +49,7 @@ body{
 *{
     font-family: TmoneyRoundWindExtraBold;
     box-sizing: border-box;
+    word-break: keep-all;
 }
 
 .resultDiv {
@@ -42,12 +80,18 @@ span#result{
     /*min-height: 500px;*/
 }
 
-
-.jocoding{
-    width: 70px;
-    margin-left: 3vw;
+#resultDesc {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    font-size: 75%;
 }
 
+.fb-share {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .navImg {

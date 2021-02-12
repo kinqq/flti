@@ -7,6 +7,19 @@ function gup(name, url) {
     return results == null ? null : results[1];
 }
 
+function onSubmitClick() {
+    window.location.href = "/FLTI";
+}
+
+function onShareClick() {
+    window.open(
+        "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href,
+        "popup",
+        "width=600,height=600"
+    );
+    return false;
+}
+
 String.prototype.count = function (c) {
     var result = 0,
         i = 0;
@@ -27,22 +40,27 @@ resultSpan = document.getElementById("result");
 resultDescSpan = document.getElementById("resultDesc");
 
 if (maxNum == 1) {
-    resultSpan.innerHTML = "외모주의형";
+    resultSpan.innerHTML = "외모주의";
     resultDescSpan.innerHTML =
-        "당신은 애인과 함께 할 때 외모를 중요하게 보는 스타일입니다. 사람을 겉모습을 판단하지 말라는 말이 있습니다 :) ";
+        "신체적 매력에 강하게 이끌리는 열정적 사랑입니다. <br/> 상대를 겉모습만으로 판단하지 말고 내면의 모습을 보는 것이 중요합니다 :)";
 } else if (maxNum == 2) {
     resultSpan.innerHTML = "금사빠";
-    resultDescSpan.innerHTML = "";
+    resultDescSpan.innerHTML =
+        "유희적 사랑으로 한 대상과의 지속적인 관계를 거부합니다. <br/> 사랑이 놀이나 게임이라는 생각을 버리는 것이 좋습니다 :)";
 } else if (maxNum == 3) {
-    resultSpan.innerHTML = "신중한 사랑 유형";
-    resultDescSpan.innerHTML = "";
+    resultSpan.innerHTML = "의심병";
+    resultDescSpan.innerHTML =
+        "상대를 잘 믿지 못하는 신중한 사랑입니다. <br/> 하지만 시간이 흐르며 점점 사랑이 타오릅니다 :)";
 } else if (maxNum == 4) {
-    resultSpan.innerHTML = "자신과 같은 관심사의 연인을 좋아함";
-    resultDescSpan.innerHTML = "";
+    resultSpan.innerHTML = "내스타일만사랑해";
+    resultDescSpan.innerHTML =
+        "나와 같은 관심사의 연인을 선호하고, 그렇지 않은 경우 다른 상대를 찾습니다. <br/> 나와 다른 관심사를 가지고 있더라도 그것을 존중해주는 태도가 중요합니다 :)";
 } else if (maxNum == 5) {
     resultSpan.innerHTML = "질투의 화신";
-    resultDescSpan.innerHTML = "";
+    resultDescSpan.innerHTML =
+        "소유적인 사랑으로 의존성과 강한 질투를 보입니다. <br/> 상대가 자신의 것이라는 생각을 버리는 것이 좋습니다 :)";
 } else if (maxNum == 6) {
     resultSpan.innerHTML = "천사";
-    resultDescSpan.innerHTML = "";
+    resultDescSpan.innerHTML =
+        "아무 조건 없이 돌봐주고 베풀어주는 사랑입니다. <br/> 하지만 자신이 호구처럼 연애하고 있는 것은 아닌지 고민해 볼 필요가 있습니다 :)";
 }
