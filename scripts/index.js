@@ -12,6 +12,7 @@ function onSubmitClick() {
     var questions = document.querySelectorAll("div[class*='q']");
     var checkedCnt = 0;
     var isAllChecked = false;
+    var res = "";
     for (var i = 0; i < questions.length; i++) {
         for (
             var j = 0;
@@ -31,4 +32,18 @@ function onSubmitClick() {
             isAllChecked = true;
         }
     }
+    if (isAllChecked) {
+        var input = document.querySelectorAll("input");
+        for (var i = 0; i < input.length; i++) {
+            if (input[i].checked) {
+                res += String(input[i].value);
+            }
+        }
+        window.location.href = "result.html?res=" + res;
+    }
+}
+
+function openInNewTab(url) {
+    var win = window.open(url, "_blank");
+    win.focus();
 }
