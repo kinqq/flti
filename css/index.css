@@ -136,6 +136,19 @@ button.submit:hover{
     text-decoration: none;
 }
 
+.bottom-ad-banner {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 1vh;
+}
+
+.top-ad-banner {
+    width: 728px;
+    height: 90px;
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .navImg {
         transform:scale(1.4);
