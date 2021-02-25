@@ -22,7 +22,7 @@ div[class*='q']{
 }
 
 p{
-    font-size:2.5vh;
+    font-size:140%;
 }
 
 div[class*='q'] {
@@ -50,7 +50,7 @@ div[class*='q'] input[type="checkbox"] + label {
     -ms-user-select: none;   
     user-select: none;   
     margin-top: 15px;
-    font-size: 2vh;
+    font-size: 120%;
 }
 
 div[class*='q'] input[type="checkbox"] + label:before {
@@ -143,6 +143,10 @@ button.submit:hover{
 }
 
 .top-ad-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 728px;
     height: 90px;
     margin-left: 3vw;
